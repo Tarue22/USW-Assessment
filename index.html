@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Starter portfolio: simple, semi-professional, nonchalant style." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name">Your Name</h1>
+        <p class="tagline">Designer & Developer — casual, confident</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-text">
+        <h2>Hello — I'm <strong>Your Name</strong></h2>
+        <p class="lead">I make clean, simple things on the web. This is a starter portfolio — straight to the point, not flashy.</p>
+        <p><a class="cta" href="#projects">See my work</a></p>
+      </div>
+      <div class="hero-card">
+        <div class="meta">Role</div>
+        <h3>Frontend Developer</h3>
+        <p class="muted">I like readable code, good gray tones, and a chill workflow.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About</h3>
+      <p>Short intro: what you do and what you like. Keep 2–3 sentences. Example: I build user-friendly sites and small web apps. I enjoy turning messy ideas into tidy interfaces.</p>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>Projects</h3>
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <h4>Project One</h4>
+          <p class="card-desc">A small app or site that does something useful. Add short description.</p>
+          <p class="tech">HTML • CSS • JS</p>
+          <p><a class="link" href="#">View repo</a></p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <h4>Project Two</h4>
+          <p class="card-desc">Another small project. Keep text short and honest.</p>
+          <p class="tech">React • CSS</p>
+          <p><a class="link" href="#">View repo</a></p>
+        </article>
+
+        <!-- Project 3 (template) -->
+        <article class="card">
+          <h4>Project Three</h4>
+          <p class="card-desc">Template to swap in your own project details.</p>
+          <p class="tech">Static site</p>
+          <p><a class="link" href="#">View repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p class="muted">Want to work together? Say hi — keep it short and friendly.</p>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourhandle" target="_blank" rel="noopener">github.com/yourhandle</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name. Made with a preference for gray.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script to keep footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
